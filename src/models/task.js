@@ -20,7 +20,6 @@ const taskSchema = new mongoose.Schema({
 
 taskSchema.pre('save', async function () {
     const task = this
-    console.log('before saving task!')
 })
 
 const Task = mongoose.model('Task', taskSchema)
